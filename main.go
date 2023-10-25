@@ -10,7 +10,7 @@ type TimeSeriesThreshold struct {
 	Threshold   float64
 }
 
-// given the collection/array/slice of structs (pairs) and a given threshold return a
+// given the collection/array/slice of structs (pairs) and a given threshold return a array of floats
 func processThreshold(pairs []TimeSeriesThreshold, threshold float64) []float64 {
 	var output []float64
 	// go through and append to output timestamps that are above the threshold
